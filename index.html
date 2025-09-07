@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQuick - Your Trusted Online Pharmacy</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Poppins & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Lordicon for Animated Icons -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <style>
+        /* Apply custom Google Fonts */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2">
+                <lord-icon
+                    src="https://cdn.lordicon.com/auvicynv.json"
+                    trigger="loop"
+                    delay="2000"
+                    colors="primary:#14b8a6,secondary:#0891b2"
+                    style="width:40px;height:40px">
+                </lord-icon>
+                <span class="text-2xl font-poppins font-bold text-teal-600">MediQuick</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-teal-500 font-semibold transition-colors">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-teal-500 font-semibold transition-colors">Features</a>
+                <a href="#products" class="text-gray-600 hover:text-teal-500 font-semibold transition-colors">Products</a>
+                <a href="#contact" class="text-gray-600 hover:text-teal-500 font-semibold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Header Icons -->
+            <div class="flex items-center space-x-4">
+                 <button class="text-gray-600 hover:text-teal-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                </button>
+                <button class="text-gray-600 hover:text-teal-500 relative">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                     <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                </button>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-teal-500 font-semibold">Home</a>
+            <a href="#features" class="block py-2 text-gray-600 hover:text-teal-500 font-semibold">Features</a>
+            <a href="#products" class="block py-2 text-gray-600 hover:text-teal-500 font-semibold">Products</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-teal-500 font-semibold">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="overflow-hidden pt-20">
+            <div class="relative min-h-screen w-full bg-gradient-to-br from-teal-50 to-cyan-100">
+                <div class="absolute top-0 -left-1/4 w-96 h-96 bg-cyan-200/50 rounded-full filter blur-3xl opacity-50 animate-blob"></div>
+                <div class="absolute -bottom-1/4 right-0 w-96 h-96 bg-teal-200/50 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
+                <div class="container mx-auto px-6 md:px-8 lg:px-12 relative z-10 flex items-center min-h-[calc(100vh-5rem)]">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="text-center lg:text-left">
+                            <span class="font-semibold text-teal-600 uppercase tracking-wider animate-fade-in-up">Your Health, Our Priority</span>
+                            <h1 class="font-poppins text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 my-4 leading-tight animate-fade-in-up" style="animation-delay: 0.2s;">Fast, Reliable & Caring Pharmacy Services</h1>
+                            <p class="text-gray-600 text-lg md:text-xl mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in-up" style="animation-delay: 0.4s;">Get your prescriptions filled and health products delivered right to your doorstep. We provide professional advice and a wide range of wellness products.</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up" style="animation-delay: 0.6s;">
+                                <a href="#products" class="inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300 ease-in-out">Shop Products</a>
+                                <a href="#" class="inline-block bg-white hover:bg-gray-100 text-teal-600 font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300 ease-in-out border border-gray-200">Upload Prescription</a>
+                            </div>
+                        </div>
+                        <div class="hidden lg:grid grid-cols-2 grid-rows-2 gap-6 p-8">
+                            <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 animate-fade-in" style="animation-delay: 0.5s;"><lord-icon src="https://cdn.lordicon.com/wloilxuq.json" trigger="loop" delay="1000" colors="primary:#14b8a6,secondary:#0891b2" style="width:100px;height:100px; margin: auto;"></lord-icon><h3 class="text-center font-bold text-gray-700 mt-4 text-lg">Vitamins & Supplements</h3></div>
+                            <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 animate-fade-in" style="animation-delay: 0.7s;"><lord-icon src="https://cdn.lordicon.com/jxwexmrj.json" trigger="morph" colors="primary:#14b8a6,secondary:#0891b2" style="width:100px;height:100px; margin: auto;"></lord-icon><h3 class="text-center font-bold text-gray-700 mt-4 text-lg">Prescription Meds</h3></div>
+                            <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 animate-fade-in" style="animation-delay: 0.9s;"><lord-icon src="https://cdn.lordicon.com/pfbjsqns.json" trigger="loop" delay="1500" colors="primary:#14b8a6,secondary:#0891b2" style="width:100px;height:100px; margin: auto;"></lord-icon><h3 class="text-center font-bold text-gray-700 mt-4 text-lg">Personal Care</h3></div>
+                            <div class="bg-white/60 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 animate-fade-in" style="animation-delay: 1.1s;"><lord-icon src="https://cdn.lordicon.com/hwuygncw.json" trigger="hover" colors="primary:#14b8a6,secondary:#0891b2" style="width:100px;height:100px; margin: auto;"></lord-icon><h3 class="text-center font-bold text-gray-700 mt-4 text-lg">Expert Advice</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 lg:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="font-poppins text-3xl md:text-4xl font-bold text-gray-800">Why Choose Us?</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">We provide the best service to ensure your health and well-being.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                        <lord-icon src="https://cdn.lordicon.com/dflahaaí.json" trigger="loop" delay="1000" colors="primary:#10b981" style="width:80px;height:80px; margin:auto;"></lord-icon>
+                        <h3 class="font-poppins text-xl font-semibold text-gray-800 mt-4">Fast Delivery</h3>
+                        <p class="mt-2 text-gray-600">Get your medicines delivered to your doorstep within hours.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                        <lord-icon src="https://cdn.lordicon.com/lmsaquje.json" trigger="loop" delay="1000" colors="primary:#10b981" style="width:80px;height:80px; margin:auto;"></lord-icon>
+                        <h3 class="font-poppins text-xl font-semibold text-gray-800 mt-4">Licensed Pharmacists</h3>
+                        <p class="mt-2 text-gray-600">Consult with our certified pharmacists for expert advice.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                        <lord-icon src="https://cdn.lordicon.com/fmasbomy.json" trigger="loop" delay="1000" colors="primary:#10b981" style="width:80px;height:80px; margin:auto;"></lord-icon>
+                        <h3 class="font-poppins text-xl font-semibold text-gray-800 mt-4">Wide Product Range</h3>
+                        <p class="mt-2 text-gray-600">A vast collection of medicines and wellness products.</p>
+                    </div>
+                     <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                        <lord-icon src="https://cdn.lordicon.com/jyijxczt.json" trigger="loop" delay="1000" colors="primary:#10b981" style="width:80px;height:80px; margin:auto;"></lord-icon>
+                        <h3 class="font-poppins text-xl font-semibold text-gray-800 mt-4">Secure Payments</h3>
+                        <p class="mt-2 text-gray-600">Your payments are safe with our encrypted system.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="py-16 lg:py-24 bg-teal-50/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="font-poppins text-3xl md:text-4xl font-bold text-gray-800">Featured Products</h2>
+                    <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Explore our best-selling health and wellness products.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://placehold.co/400x300/e2e8f0/334155?text=Product+Image" alt="Product Image" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-gray-500">Vitamins</span>
+                            <h3 class="font-poppins text-lg font-semibold text-gray-800 mt-2">Multivitamin Complex</h3>
+                            <p class="text-2xl font-bold text-teal-500 mt-4">$25.99</p>
+                            <button class="w-full mt-4 bg-teal-500 text-white py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                     <div class="bg-white rounded-lg shadow-md overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://placehold.co/400x300/e2e8f0/334155?text=Product+Image" alt="Product Image" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-gray-500">Personal Care</span>
+                            <h3 class="font-poppins text-lg font-semibold text-gray-800 mt-2">Herbal Shampoo</h3>
+                            <p class="text-2xl font-bold text-teal-500 mt-4">$12.50</p>
+                            <button class="w-full mt-4 bg-teal-500 text-white py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                     <div class="bg-white rounded-lg shadow-md overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://placehold.co/400x300/e2e8f0/334155?text=Product+Image" alt="Product Image" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-gray-500">Pain Relief</span>
+                            <h3 class="font-poppins text-lg font-semibold text-gray-800 mt-2">Ibuprofen 200mg</h3>
+                            <p class="text-2xl font-bold text-teal-500 mt-4">$8.99</p>
+                            <button class="w-full mt-4 bg-teal-500 text-white py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://placehold.co/400x300/e2e8f0/334155?text=Product+Image" alt="Product Image" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-gray-500">Supplements</span>
+                            <h3 class="font-poppins text-lg font-semibold text-gray-800 mt-2">Omega-3 Fish Oil</h3>
+                            <p class="text-2xl font-bold text-teal-500 mt-4">$19.99</p>
+                            <button class="w-full mt-4 bg-teal-500 text-white py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="font-poppins text-xl font-bold mb-4">MediQuick</h3>
+                    <p class="text-gray-400">Your trusted partner in health, delivering quality medicines and wellness products with care and speed.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-poppins text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Us -->
+                <div>
+                    <h3 class="font-poppins text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start"><span class="mr-2 mt-1">📍</span>123 Health St, Wellness City, 12345</li>
+                        <li class="flex items-center"><span class="mr-2">📧</span>support@mediquick.com</li>
+                        <li class="flex items-center"><span class="mr-2">📞</span>+1 (234) 567-890</li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="font-poppins text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe for health tips and special offers.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded-l-lg text-gray-800 focus:outline-none">
+                            <button class="bg-teal-500 hover:bg-teal-600 px-4 py-2 rounded-r-lg font-semibold">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+                <p>&copy; 2024 MediQuick. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Custom CSS for animations -->
+    <style>
+        @keyframes blob { 0% { transform: translate(0px, 0px) scale(1); } 33% { transform: translate(30px, -50px) scale(1.1); } 66% { transform: translate(-20px, 20px) scale(0.9); } 100% { transform: translate(0px, 0px) scale(1); } }
+        .animate-blob { animation: blob 7s infinite; }
+        .animation-delay-4000 { animation-delay: 4s; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .animate-fade-in { animation: fadeIn 1s ease-in-out forwards; opacity: 0; }
+    </style>
+
+    <!-- Simple JS for Mobile Menu Toggle -->
+    <script>
+        document.getElementById('mobile-me
